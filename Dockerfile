@@ -28,4 +28,8 @@ COPY config.sh /etc/my_init.d/config.sh
 RUN mkdir /etc/service/nzbget
 COPY nzbget.sh /etc/service/nzbget/run
 
+# Tail nzblog and make visible to docker
+RUN mkdir /etc/service/tail
+COPY tail.sh /etc/service/tail/run
+
 RUN chmod +x /etc/service/*/run /etc/my_init.d/*
