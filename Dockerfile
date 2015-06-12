@@ -5,7 +5,7 @@ ENV HOME /root
 ENV TERM screen
 MAINTAINER x0nic <nathan@globalphobia.com>
 
-ENV VERSION 14.1
+ENV VERSION 15.0
 ADD http://downloads.sourceforge.net/project/nzbget/nzbget-stable/$VERSION/nzbget-$VERSION.tar.gz /tmp/nzbget.tar.gz
 
 # Use baseimage-docker's init system
