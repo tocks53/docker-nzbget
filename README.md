@@ -8,7 +8,9 @@ The default login is `nzbget` / `tegbzn6789`.
 
 ## Volumes
 
-### `/data`
+### `/config`
+### `/downloads`
+
 
 Configuration files and state for NzbGet.
 
@@ -18,3 +20,4 @@ Configuration files and state for NzbGet.
 
 WebUI port.
 
+sudo docker run -i -p 6789:6789 -v /home/me/docker/config:/config:rw -v /home/me/docker/dl:/downloads:rw -t tocks/docker-nzbget
